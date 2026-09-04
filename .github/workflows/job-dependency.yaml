@@ -19,7 +19,7 @@ jobs:
         run: echo "Running tests..."
 
   deploy:
-    needs: [build, test]
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Deploy
